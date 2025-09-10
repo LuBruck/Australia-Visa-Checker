@@ -16,7 +16,7 @@ if tabela:
     linhas = tabela.find_all("tr")
     for linha in linhas:
         colunas = linha.find_all("td")
-        if colunas and "Chile" in colunas[0].text:
+        if colunas and "Brazil" in colunas[0].text:
             status_brasil = [coluna.text.strip() for coluna in colunas][1]
             status_brasil = status_brasil.replace('\u200b', '').strip()
             break
